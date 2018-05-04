@@ -1,0 +1,62 @@
+:root {
+  --primary-lightest: #ebf4eb;
+  --primary-lighter: #c9e4ca;
+  --primary-light: #87bba2;
+  --primary: #55828b;
+  --primary-dark: #3b6064;
+  --primary-darker: #364958;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: 26px;
+  background-color: var(--primary-lightest);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.mainContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% auto auto 25%;
+  grid-template-rows: 105px auto 200px;
+  grid-template-areas: "main main main main";
+}
+
+.container {
+  grid-area: main;
+  justify-self: center;
+  width: 50vw;
+}

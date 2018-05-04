@@ -1,0 +1,63 @@
+.EditHeadlineTag>input {
+  font-size: 4rem;
+  font-weight: 400;
+  background: none;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  border: none;
+}
+
+.EditHeadlineTag>input:focus {
+  outline: 1px solid var(--primary);
+  border: none;
+}
+
+.EditHeadlineTag>input:hover {
+  outline: 1px solid var(--primary);
+  border: none;
+}
+
+.AddUserInput {
+  border: none;
+  border-bottom: 1px solid var(--primary-light);
+  font-size: 3rem;
+  background: none;
+  transition: border .4s cubic-bezier(.23, 1, .32, 1);
+  width: 100%;
+}
+
+.AddUserInput-underline {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: var(--primary-darker);
+  height: 2px;
+  width: 0;
+  transition: width .4s cubic-bezier(.23, 1, .32, 1);
+}
+
+.AddUserInput:focus {
+  border: none;
+  outline: none;
+}
+
+.AddUserInput:focus+.AddUserInput-underline {
+  width: 100% !important;
+}
+
+.AddUserInput::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.UserCard {
+  background-color: white;
+  margin-bottom: 14px;
+  margin-top: 14px;
+  padding: 14px;
+  transition: ease 0.2s background;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.UserCard:hover {
+  background-color: var(--primary-lighter);
+}
